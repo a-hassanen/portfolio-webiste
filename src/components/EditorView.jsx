@@ -24,6 +24,7 @@ const EditorView = ({ initialData }) => {
     const handleAddItem = (section) => {
         let newItem;
         if (section === 'experience') newItem = { company: '', title: '', period: '', description: '' };
+        else if (section === 'education') newItem = { institution: '', degree: '', period: '', description: '' };
         else if (section === 'projects') newItem = { name: '', description: '', link: '' };
         else if (section === 'badges') newItem = { name: '', imageUrl: '', link: '' };
         
@@ -168,7 +169,7 @@ const EditorView = ({ initialData }) => {
     const renderEditableSection = (section, fields) => (
       <div className="editor-section">
         <h2>{section.charAt(0).toUpperCase() + section.slice(1)}</h2>
-        {data[section].map((item, index) => (
+        {data[section] && data[section].map((item, index) => (
           <div key={index} className="editor-item">
             <button onClick={() => handleRemoveItem(section, index)} className="remove-button">X</button>
             {fields.map(field => (
@@ -219,6 +220,13 @@ const EditorView = ({ initialData }) => {
                     { name: 'description', placeholder: 'Description', type: 'textarea' },
                 ])}
                 
+                 {renderEditableSection('education', [
+                    { name: 'institution', placeholder: 'Institution' },
+                    { name: 'degree', placeholder: 'Degree' },
+                    { name: 'period', placeholder: 'Period' },
+                    { name: 'description', placeholder: 'Description', type: 'textarea' },
+                ])}
+
                 {renderEditableSection('projects', [
                     { name: 'name', placeholder: 'Project Name' },
                     { name: 'description', placeholder: 'Description', type: 'textarea' },

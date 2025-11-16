@@ -22,6 +22,7 @@ const Header = ({ name, showEditorLink }) => {
 
         <div className="nav-links">
           <a href="#experience" onClick={(e) => handleNavClick(e, 'experience')}>Experience</a>
+          <a href="#education" onClick={(e) => handleNavClick(e, 'education')}>Education</a>
           <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>Skills</a>
           <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
           <a href="#resume" onClick={(e) => handleNavClick(e, 'resume')}>Resume</a>

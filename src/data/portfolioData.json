@@ -22,6 +22,14 @@
       "description": "Developed and maintained responsive websites for various clients using HTML, CSS, and JavaScript. Collaborated with designers to ensure pixel-perfect implementation of UIs."
     }
   ],
+  "education": [
+    {
+      "institution": "University of Technology",
+      "degree": "Bachelor of Science in Computer Science",
+      "period": "Sep 2013 - May 2017",
+      "description": "Graduated with honors. Focused on software engineering and web development principles. Participated in the annual coding competition."
+    }
+  ],
   "skills": {
     "Programming Languages": [
       "React",

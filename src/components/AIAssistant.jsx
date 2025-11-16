@@ -16,6 +16,7 @@ const AIAssistant = ({ onAddItem }) => {
                 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
                 const schema = {
                     experience: { company: 'string', title: 'string', period: 'string', description: 'string' },
+                    education: { institution: 'string', degree: 'string', period: 'string', description: 'string' },
                     projects: { name: 'string', description: 'string', link: 'string' },
                     certificates: { name: 'string', link: 'string', category: 'string' },
                     badges: { name: 'string', imageUrl: 'string', link: 'string' }
