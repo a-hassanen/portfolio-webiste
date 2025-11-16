@@ -11,7 +11,6 @@ const Skills = () => {
     setExpandedSkill(expandedSkill === skill ? null : skill);
   };
 
-  // Function to get badges linked to a skill
   const getBadgesForSkill = (skill) => {
     return badges.filter((badge) => badge.skills?.includes(skill));
   };
@@ -20,16 +19,21 @@ const Skills = () => {
     <section id="skills" className="skills-section">
       <div className="skills-header">
         <h2>Skills</h2>
+
+        {/* Integrated Search Bar */}
         <div className="skills-search">
           <input
-            type="text"
+            id="skills-search-input"
+            type="search"
             placeholder="Search skills..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
+            autoComplete="off"
           />
         </div>
       </div>
 
+      {/* Skills List */}
       {Object.entries(skills).map(([category, skillList], catIndex) => {
         const filteredSkills = skillList.filter((skill) =>
           skill.toLowerCase().includes(searchTerm)
