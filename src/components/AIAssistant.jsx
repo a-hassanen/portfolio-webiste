@@ -17,10 +17,10 @@ const AIAssistant = ({ onAddItem }) => {
                 const schema = {
                     experience: { company: 'string', title: 'string', period: 'string', description: 'string' },
                     projects: { name: 'string', description: 'string', link: 'string' },
-                    certificates: { name: 'string', link: 'string' },
+                    certificates: { name: 'string', link: 'string', category: 'string' },
                     badges: { name: 'string', imageUrl: 'string', link: 'string' }
                 };
-                const systemInstruction = `You are a portfolio management assistant. Your goal is to help the user update their portfolio data by asking them questions. The portfolio data structure for items that can be added is: ${JSON.stringify(schema, null, 2)}. When a user wants to add an item, ask for all the necessary fields for that item type. Once you have all the information, present it as a JSON object for the user to confirm. IMPORTANT: You MUST wrap the final JSON object within <json> tags. For example: <json>{"section": "certificates", "data": {"name": "Certificate Name", "link": "https://example.com"}}</json>. Do not add the <json> block until you have all the required information. Start by asking what they'd like to do.`;
+                const systemInstruction = `You are a portfolio management assistant. Your goal is to help the user update their portfolio data by asking them questions. The portfolio data structure for items that can be added is: ${JSON.stringify(schema, null, 2)}. When a user wants to add an item, ask for all the necessary fields for that item type, including the category for certificates. Once you have all the information, present it as a JSON object for the user to confirm. IMPORTANT: You MUST wrap the final JSON object within <json> tags. For example: <json>{"section": "certificates", "data": {"category": "Cloud Certs", "name": "Certificate Name", "link": "https://example.com"}}</json>. Do not add the <json> block until you have all the required information. Start by asking what they'd like to do.`;
 
                 const newChat = ai.chats.create({
                     model: 'gemini-2.5-flash',

@@ -22,19 +22,31 @@
       "description": "Developed and maintained responsive websites for various clients using HTML, CSS, and JavaScript. Collaborated with designers to ensure pixel-perfect implementation of UIs."
     }
   ],
-  "skills": [
-    "React",
-    "TypeScript",
-    "JavaScript (ES6+)",
-    "Node.js",
-    "HTML5 & CSS3",
-    "Webpack",
-    "Vite",
-    "Git & GitHub",
-    "UI/UX Design",
-    "Accessibility",
-    "Jest & RTL"
-  ],
+  "skills": {
+    "Programming Languages": [
+      "React",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Node.js",
+      "HTML5 & CSS3"
+    ],
+    "Tools & Technologies": [
+      "Webpack",
+      "Vite",
+      "Git & GitHub",
+      "Jest & RTL"
+    ],
+    "Industry Knowledge": [
+      "UI/UX Design",
+      "Accessibility",
+      "Agile Methodologies"
+    ],
+    "Interpersonal Skills": [
+      "Team Leadership",
+      "Mentoring",
+      "Communication"
+    ]
+  },
   "projects": [
     {
       "name": "Project Alpha",
@@ -47,16 +59,20 @@
       "link": "https://github.com/example/portfolio"
     }
   ],
-  "certificates": [
-    {
-      "name": "Advanced React - Scrimba",
-      "link": "https://scrimba.com/learn/advancedreact"
-    },
-    {
-      "name": "UI/UX Design Specialization - Coursera",
-      "link": "https://www.coursera.org/specializations/ui-ux-design"
-    }
-  ],
+  "certificates": {
+    "Cloud, DevOps, & IT Service Management": [],
+    "Atlassian Technical Expertise": [],
+    "Web Development & Design": [
+      {
+        "name": "Advanced React - Scrimba",
+        "link": "https://scrimba.com/learn/advancedreact"
+      },
+      {
+        "name": "UI/UX Design Specialization - Coursera",
+        "link": "https://www.coursera.org/specializations/ui-ux-design"
+      }
+    ]
+  },
   "badges": [
     {
       "name": "GitHub Arctic Code Vault Contributor",

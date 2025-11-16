@@ -85,6 +85,7 @@
   .button:hover {
     background-color: var(--accent-hover);
     text-decoration: none;
+    color: black;
   }
   
   .button:disabled {
