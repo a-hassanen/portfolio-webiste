@@ -35,11 +35,12 @@ const Header = ({ name, showEditorLink }) => {
   useEffect(() => {
     document.body.className = isDarkMode ? 'dark' : 'light';
   }, [isDarkMode]);
+  const base = import.meta.env.BASE_URL; 
 
   return (
     <header className={`header ${isDarkMode ? 'dark' : ''}`}>
       <div className="header-container">
-        <div className="logo">{name}</div>
+        <div className="logo"><a className="logo-home" href={base}>{name}</a></div>
         <nav className="nav-links">
           {menuItems.map(item => (
             <button

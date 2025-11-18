@@ -19,12 +19,12 @@ const PortfolioView = ({ data }) => (
       <Hero personalInfo={data.personalInfo} />
       <AboutMe aboutme={data.aboutme} />
       <Experience items={data.experience} />
-      <Education items={data.education} />
-      <Skills items={data.skills} />
       <Projects items={data.projects} />
       <Resume />
       <Certificates items={data.certificates} />
       <Badges items={data.badges} />
+      <Education items={data.education} />
+      <Skills items={data.skills} />
       <Contact personalInfo={data.personalInfo} />
     </main>
     <Footer name={data.personalInfo.name}/>
