@@ -12,25 +12,51 @@ const Badges = ({ items }) => {
       className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
     >
       <h2>Badges</h2>
-      <div className="badges-grid">
-        {items.map((badge, index) => {
-          const badgeId = `badge-${badge.name.replace(/\s+/g, '-')}`;
-          return (
-            <a
-              key={index}
-              id={badgeId}
-              href={badge.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="badge-item-link"
-            >
-              <div className="badge-item card">
-                <img src={badge.imageUrl} alt={badge.name} />
-                <span>{badge.name}</span>
-              </div>
-            </a>
-          );
-        })}
+      <div className="card">
+        {Object.entries(items).map(([category, badges], index) => (
+          <div key={index} className={`badge-category-${index}`}>
+            <h3>{category}</h3>
+            <ul className="badges-grid">
+              {/* {badges.map((badge, badgeIndex) => (
+                <div key={badgeIndex} className={`badge-${badgeIndex}-container`}>
+                    <a
+                      key={index}
+                      id={badgeId}
+                      href={badge.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="badge-item-link"
+                    >
+                  <div className="badge-item card">
+                    <img src={badge.imageUrl} alt={badge.name} />
+                    <span>{badge.name}</span>
+                  </div>
+                </a>
+                </div>
+              ))} */}
+              {badges.map((badge, badgeIndex) => {
+                const badgeId = `badge-${badge.name.replace(/\s+/g, '-')}`;
+                return (
+                  <div key={badgeIndex} className={`badge-${badgeIndex}-container`}>
+                    <a
+                      key={index}
+                      id={badgeId}
+                      href={badge.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="badge-item-link"
+                    >
+                      <div className="badge-item card">
+                        <img src={badge.imageUrl} alt={badge.name} />
+                        <span>{badge.name}</span>
+                      </div>
+                    </a>
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );

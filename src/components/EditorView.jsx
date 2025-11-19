@@ -30,6 +30,17 @@ const EditorView = ({ initialData }) => {
         }));
     };
 
+    // const handleAddItem = (section) => {
+    //     let newItem;
+    //     if (section === 'experience') newItem = { company: '', title: '', period: '', description: '' };
+    //     else if (section === 'education') newItem = { institution: '', degree: '', period: '', description: '' };
+    //     else if (section === 'projects') newItem = { name: '', description: '', link: '' };
+    //     else if (section === 'badges') newItem = { name: '', imageUrl: '', link: '' };
+        
+    //     if (newItem) {
+    //         setData(prev => ({ ...prev, [section]: [...prev[section], newItem] }));
+    //     }
+    // };
     const handleAddItem = (section) => {
         let newItem;
         if (section === 'experience') newItem = { company: '', title: '', period: '', description: '' };
@@ -38,7 +49,19 @@ const EditorView = ({ initialData }) => {
         else if (section === 'badges') newItem = { name: '', imageUrl: '', link: '' };
         
         if (newItem) {
-            setData(prev => ({ ...prev, [section]: [...prev[section], newItem] }));
+            // badges is an object of categories => arrays, so handle it differently
+            if (section === 'badges') {
+                setData(prev => {
+                    const badgesCopy = { ...prev.badges };
+                    // add to first existing category, or create "New Category" if none exist
+                    const firstCategory = Object.keys(badgesCopy)[0] || 'New Category';
+                    if (!badgesCopy[firstCategory]) badgesCopy[firstCategory] = [];
+                    badgesCopy[firstCategory] = [...badgesCopy[firstCategory], newItem];
+                    return { ...prev, badges: badgesCopy };
+                });
+            } else {
+                setData(prev => ({ ...prev, [section]: [...prev[section], newItem] }));
+            }
         }
     };
 
@@ -171,7 +194,54 @@ const EditorView = ({ initialData }) => {
         });
     };
     // --- End Certificates Handlers ---
-    
+
+        // --- Badges Handlers ---
+    const handleAddBadgeCategory = () => {
+        let newCategoryName = 'New Category';
+        let counter = 1;
+        while (data.badges && data.badges.hasOwnProperty(newCategoryName)) {
+            newCategoryName = `New Category ${counter}`;
+            counter++;
+        }
+        setData(prev => ({ ...prev, badges: { ...prev.badges, [newCategoryName]: [] } }));
+    };
+
+    const handleRemoveBadgeCategory = (category) => {
+        setData(prev => {
+            const copy = { ...prev.badges };
+            delete copy[category];
+            return { ...prev, badges: copy };
+        });
+    };
+
+    const handleAddBadgeInCategory = (category) => {
+        setData(prev => {
+            const copy = { ...prev.badges };
+            copy[category] = [...(copy[category] || []), { name: '', imageUrl: '', link: '' }];
+            return { ...prev, badges: copy };
+        });
+    };
+
+    const handleRemoveBadgeInCategory = (category, index) => {
+        setData(prev => {
+            const copy = { ...prev.badges };
+            copy[category] = copy[category].filter((_, i) => i !== index);
+            return { ...prev, badges: copy };
+        });
+    };
+
+    const handleBadgeChange = (category, index, e) => {
+        const { name, value } = e.target;
+        setData(prev => {
+            const copy = { ...prev.badges };
+            const items = [...(copy[category] || [])];
+            items[index] = { ...items[index], [name]: value };
+            copy[category] = items;
+            return { ...prev, badges: copy };
+        });
+    };
+    // --- End Badges Handlers ---
+
     const generateJson = () => {
         const jsonString = JSON.stringify(data, null, 2);
         setGeneratedJson(jsonString);
@@ -296,7 +366,7 @@ const EditorView = ({ initialData }) => {
                 </div>
 
 
-                {renderEditableSection('badges', [
+                {/* {renderEditableSection('badges', [
                     { name: 'name', placeholder: 'Badge Name' },
                     { name: 'imageUrl', placeholder: 'Image URL' },
                     { name: 'link', placeholder: 'Badge Link' },
@@ -312,7 +382,32 @@ const EditorView = ({ initialData }) => {
                         />
                         )
                     }
-                    ])}
+                    ])} */}
+                {/* Badges */}
+                <div className="editor-section">
+                    <h2>Badges</h2>
+                    {Object.entries(data.badges || {}).map(([category, badges]) => (
+                        <div key={category} className="editor-item">
+                            <button onClick={() => handleRemoveBadgeCategory(category)} className="remove-button">X</button>
+                            <div className="editor-form-group">
+                                <label>Category Name</label>
+                                <input type="text" value={category} onChange={(e) => handleCategoryNameChange(category, e, 'badges')} placeholder="Category Name" />
+                            </div>
+
+                            {badges.map((badge, index) => (
+                                <div key={index} style={{ border: '1px solid #444', padding: '10px', borderRadius: '5px', position: 'relative', marginTop: '10px' }}>
+                                    <button onClick={() => handleRemoveBadgeInCategory(category, index)} className="remove-button" style={{ top: '5px', right: '5px', height: '20px', width: '20px', fontSize: '12px' }}>X</button>
+                                    <input name="name" value={badge.name} onChange={(e) => handleBadgeChange(category, index, e)} placeholder="Badge Name" style={{ marginBottom: '5px' }} />
+                                    <input name="imageUrl" value={badge.imageUrl} onChange={(e) => handleBadgeChange(category, index, e)} placeholder="Image URL" style={{ marginBottom: '5px' }} />
+                                    <input name="link" value={badge.link} onChange={(e) => handleBadgeChange(category, index, e)} placeholder="Badge Link" />
+                                </div>
+                            ))}
+
+                            <button className="button" onClick={() => handleAddBadgeInCategory(category)} style={{ marginTop: '10px' }}>Add Badge to {category}</button>
+                        </div>
+                    ))}
+                    <button className="button" onClick={handleAddBadgeCategory} style={{ marginTop: '10px' }}>Add Badge Category</button>
+                </div>
 
                 {/* Skills */}
                 <div className="editor-section">

@@ -4,6 +4,10 @@ import '../styles/Skills.css';
 
 const Skills = () => {
   const { skills, badges } = portfolioData;
+
+  // NEW: flatten grouped badges so Skills.jsx still works
+  const flatBadges = Object.values(badges).flat();
+
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedSkill, setExpandedSkill] = useState(null);
 
@@ -12,15 +16,23 @@ const Skills = () => {
   };
 
   const getBadgesForSkill = (skill) => {
-    return badges.filter((badge) => badge.skills?.includes(skill));
-  };
+  return flatBadges.filter((badge) => {
+    if (!badge.skills) return false;
+
+    const skillArray = Array.isArray(badge.skills)
+      ? badge.skills.map(s => s.toLowerCase())
+      : badge.skills.split(',').map(s => s.trim().toLowerCase());
+
+    return skillArray.includes(skill.toLowerCase());
+  });
+};
+
 
   return (
     <section id="skills" className="skills-section">
       <div className="skills-header">
         <h2>Skills</h2>
 
-        {/* Integrated Search Bar */}
         <div className="skills-search">
           <input
             id="skills-search-input"
@@ -67,7 +79,6 @@ const Skills = () => {
                             height="20"
                             viewBox="0 0 512 512"
                             fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg"
                           >
                             <path d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z"/>
                           </svg>
@@ -99,7 +110,6 @@ const Skills = () => {
                                   setTimeout(() => element.classList.remove('highlight'), 2000);
                                 }
                               }}
-                              style={{ cursor: 'pointer' }}
                             >
                               {badge.name}
                             </span>
@@ -116,8 +126,7 @@ const Skills = () => {
       })}
 
       {Object.values(skills).every((skillList) =>
-        skillList.filter((skill) => skill.toLowerCase().includes(searchTerm))
-          .length === 0
+        skillList.filter((skill) => skill.toLowerCase().includes(searchTerm)).length === 0
       ) && searchTerm && <p>No skills match your search.</p>}
     </section>
   );

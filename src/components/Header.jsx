@@ -8,13 +8,13 @@ const Header = ({ name, showEditorLink }) => {
   const menuItems = [
     { id: 'aboutme', label: 'About Me' },
     { id: 'experience', label: 'Experience' },
-    { id: 'education', label: 'Education' },
-    { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'resume', label: 'Resume' },
     { id: 'certificates', label: 'Certificates' },
+    { id: 'education', label: 'Education' },
     { id: 'badges', label: 'Badges' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'contact', label: 'Contact' }
   ];
 
   const handleNavClick = (e, id) => {
