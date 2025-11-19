@@ -22,13 +22,47 @@ const EditorView = ({ initialData }) => {
     };
 
         // --- About Me Handler ---
-    const handleAboutMeChange = (e) => {
+        const handleAboutMeChange = (e) => {
+            const { name, value } = e.target;
+            setData(prev => ({
+                ...prev,
+                aboutme: { ...prev.aboutme, [name]: value }
+            }));
+        };
+
+        const handleAboutMeLanguageChange = (index, e) => {
         const { name, value } = e.target;
-        setData(prev => ({
-            ...prev,
-            aboutme: { ...prev.aboutme, [name]: value }
-        }));
-    };
+        setData(prev => {
+            const updatedLangs = [...prev.aboutme.Languages];
+            updatedLangs[index][name] = value;
+            return {
+                ...prev,
+                aboutme: { ...prev.aboutme, Languages: updatedLangs }
+            };
+        });
+        };
+
+        const handleAddLanguage = () => {
+            setData(prev => ({
+                ...prev,
+                aboutme: {
+                    ...prev.aboutme,
+                    Languages: [...prev.aboutme.Languages, { name: "", proficiency: "" }]
+                }
+            }));
+        };
+
+        const handleRemoveLanguage = (index) => {
+            setData(prev => ({
+                ...prev,
+                aboutme: {
+                    ...prev.aboutme,
+                    Languages: prev.aboutme.Languages.filter((_, i) => i !== index)
+                }
+            }));
+        };
+
+
     // --- End About Me Handler ---
     const handleAddItem = (section) => {
         let newItem;
@@ -298,6 +332,8 @@ const EditorView = ({ initialData }) => {
                 {/* About Me */}
                 <div className="editor-section">
                     <h2>About Me</h2>
+
+                    {/* Description */}
                     <div className="editor-form-group">
                         <label htmlFor="aboutme-description">Description</label>
                         <textarea
@@ -309,7 +345,89 @@ const EditorView = ({ initialData }) => {
                             rows={6}
                         />
                     </div>
+
+                    {/* Availability */}
+                    <div className="editor-form-group">
+                        <label htmlFor="aboutme-availability">Availability</label>
+                        <input
+                            id="aboutme-availability"
+                            name="Availability"
+                            value={data.aboutme?.Availability || ''}
+                            onChange={handleAboutMeChange}
+                            placeholder="e.g., Immediate"
+                        />
+                    </div>
+
+                    {/* Location */}
+                    <div className="editor-form-group">
+                        <label htmlFor="aboutme-location">Location</label>
+                        <input
+                            id="aboutme-location"
+                            name="Location"
+                            value={data.aboutme?.Location || ''}
+                            onChange={handleAboutMeChange}
+                            placeholder="e.g., Dubai, UAE"
+                        />
+                    </div>
+
+                    {/* Preferred Locations */}
+                    <div className="editor-form-group">
+                        <label htmlFor="aboutme-preferred">Preferred Locations</label>
+                        <input
+                            id="aboutme-preferred"
+                            name="PreferredLocations"
+                            value={data.aboutme?.PreferredLocations || ''}
+                            onChange={handleAboutMeChange}
+                            placeholder="e.g., UAE, Saudi Arabia, Qatar, Remote"
+                        />
+                    </div>
+
+                    {/* Relocation */}
+                    <div className="editor-form-group">
+                        <label htmlFor="aboutme-relocation">Relocation</label>
+                        <input
+                            id="aboutme-relocation"
+                            name="Relocation"
+                            value={data.aboutme?.Relocation || ''}
+                            onChange={handleAboutMeChange}
+                            placeholder="e.g., Open to relocate anywhere"
+                        />
+                    </div>
+
+                    {/* Languages */}
+                    <h3 style={{ marginTop: "20px" }}>Languages</h3>
+                    {data.aboutme?.Languages?.map((lang, index) => (
+                        <div key={index} className="editor-item" style={{ position: "relative", paddingLeft: "10px" }}>
+                            <button
+                                className="remove-button"
+                                onClick={() => handleRemoveLanguage(index)}
+                                style={{ top: "5px", right: "5px" }}
+                            >
+                                X
+                            </button>
+
+                            <input
+                                name="name"
+                                value={lang.name}
+                                onChange={(e) => handleAboutMeLanguageChange(index, e)}
+                                placeholder="Language (e.g., English)"
+                                style={{ marginBottom: "5px" }}
+                            />
+
+                            <input
+                                name="proficiency"
+                                value={lang.proficiency}
+                                onChange={(e) => handleAboutMeLanguageChange(index, e)}
+                                placeholder="Proficiency (e.g., Native)"
+                            />
+                        </div>
+                    ))}
+
+                    <button className="button" onClick={handleAddLanguage}>
+                        Add Language
+                    </button>
                 </div>
+
 
                 {renderEditableSection('experience', [
                     { name: 'company', placeholder: 'Company' },

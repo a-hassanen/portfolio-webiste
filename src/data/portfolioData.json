@@ -16,7 +16,21 @@
     "coursera": "https://www.coursera.org/user/username"
   },
   "aboutme":{
-    "description": "Experienced Frontend Engineer with a demonstrated history of working in the information technology and services industry. Skilled in React, TypeScript, JavaScript (ES6+), Node.js, HTML5 & CSS3. Strong engineering professional with a Bachelor's degree focused in Computer Science from University of Technology."
+    "description": "Experienced Frontend Engineer with a demonstrated history of working in the information technology and services industry. Skilled in React, TypeScript, JavaScript (ES6+), Node.js, HTML5 & CSS3. Strong engineering professional with a Bachelor's degree focused in Computer Science from University of Technology.",
+    "Languages": [
+      {
+        "name": "English",
+        "proficiency": "Native or Bilingual Proficiency"
+      },
+      {
+        "name": "Arabic",
+        "proficiency": "Native or Bilingual Proficiency"
+      }
+    ],
+    "Availability": "Immediate",
+    "Location": "Dubai, UAE",
+    "PreferredLocations": "UAE, Saudi Arabia, Qatar, Remote",
+    "Relocation": "Open to relocate anywhere"
   },
   "experience": [
     {
