@@ -143,11 +143,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-
-  .section{
-    data-scroll-ready: true
-    }
-
+  
   .background-video {
     position: fixed;       /* Stays in place when scrolling */
     top: 0;
