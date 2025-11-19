@@ -29,18 +29,7 @@ const EditorView = ({ initialData }) => {
             aboutme: { ...prev.aboutme, [name]: value }
         }));
     };
-
-    // const handleAddItem = (section) => {
-    //     let newItem;
-    //     if (section === 'experience') newItem = { company: '', title: '', period: '', description: '' };
-    //     else if (section === 'education') newItem = { institution: '', degree: '', period: '', description: '' };
-    //     else if (section === 'projects') newItem = { name: '', description: '', link: '' };
-    //     else if (section === 'badges') newItem = { name: '', imageUrl: '', link: '' };
-        
-    //     if (newItem) {
-    //         setData(prev => ({ ...prev, [section]: [...prev[section], newItem] }));
-    //     }
-    // };
+    // --- End About Me Handler ---
     const handleAddItem = (section) => {
         let newItem;
         if (section === 'experience') newItem = { company: '', title: '', period: '', description: '' };
@@ -365,24 +354,6 @@ const EditorView = ({ initialData }) => {
                     <button className="button" onClick={handleAddCertCategory}>Add Certificate Category</button>
                 </div>
 
-
-                {/* {renderEditableSection('badges', [
-                    { name: 'name', placeholder: 'Badge Name' },
-                    { name: 'imageUrl', placeholder: 'Image URL' },
-                    { name: 'link', placeholder: 'Badge Link' },
-                    {
-                        name: 'skills',
-                        placeholder: 'Linked Skills (comma-separated)',
-                        customRender: (value, idx, handleChange) => (
-                        <input
-                            type="text"
-                            value={value.join(', ')}
-                            onChange={(e) => handleChange(idx, 'skills', e.target.value.split(',').map(s => s.trim()))}
-                            placeholder="e.g., React, Node.js"
-                        />
-                        )
-                    }
-                    ])} */}
                 {/* Badges */}
                 <div className="editor-section">
                     <h2>Badges</h2>
