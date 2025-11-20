@@ -3,11 +3,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1.5rem;
+  align-items: stretch;
 }
 
 .badge-item-link {
   text-decoration: none;
   color: inherit;
+  display: flex; 
+  flex-direction: column;
+  height: 100%;
 }
 .badge-item-link:hover {
   text-decoration: none;
@@ -21,6 +25,10 @@
   gap: 0.5rem;
 }
 
+.badge-item.card{
+  height: 100%;
+}
+
 .badgename{
   overflow-wrap: break-word; /* Standard way to wrap long text */
   word-break: break-word;    /* Hard break for long words without spaces */
@@ -28,8 +36,8 @@
 }
 
 .badge-item img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   background: #fff;
   border-radius: 50%;
