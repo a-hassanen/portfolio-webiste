@@ -7,5 +7,5 @@ const REPOSITORY_NAME = "portfolio";
 export default defineConfig({
   plugins: [react()],
   base: `/${REPOSITORY_NAME}/`,
-  assetsInclude: ['**/*.doc', '**/*.docx'],
+  assetsInclude: ['**/*.doc', '**/*.docx', '**/*.pdf', '**/*.mp4', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif' ],
 });
