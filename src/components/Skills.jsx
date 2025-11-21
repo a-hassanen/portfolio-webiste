@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 import portfolioData from '../data/portfolioData.json';
 import '../styles/Skills.css';
 
@@ -72,17 +73,10 @@ const Skills = () => {
                         className="skill-header"
                         onClick={() => skillBadges.length > 0 && toggleSkill(skill)}
                       >
-                        <span>{skill}</span>
+                        <span className="s-header">{skill}</span>
                         {skillBadges.length > 0 && (
                           <span className={`chevron ${isExpanded ? 'expanded' : ''}`}>
-                            <svg
-                              width="20"
-                              height="20"
-                              viewBox="0 0 512 512"
-                              fill="currentColor"
-                            >
-                              <path d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z"/>
-                            </svg>
+                            <FaChevronDown className="chevron-icon" />
                           </span>
                         )}
                       </div>

@@ -57,7 +57,19 @@
 
 /* Right details panel */
 #about-details{
-  max-width: 30%;
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;/* Legacy support */
+  word-break: break-word; /* Modern support */
+}
+
+#about-details ul {
+  padding-left: 15px; /* Reduces deep indentation on mobile */
+}
+
+#about-details li {
+  white-space: normal !important; /* Prevents text from staying on one line */
+  line-height: 1.6; /* Improves readability of wrapped text */
 }
 
 .details-title {
@@ -99,6 +111,14 @@
   .about-content {
     flex-direction: column;
     text-align: center;
+  }
+  /* Force grids to stack vertically */
+  .cert-grid, 
+  .contact-grid, 
+  .badges-grid { 
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px;
   }
 
   .about-details {
