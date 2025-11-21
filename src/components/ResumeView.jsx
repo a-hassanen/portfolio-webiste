@@ -24,8 +24,11 @@ const ResumeView = () => {
           <div className="resume-actions">
             {pdfUrl && <a href={pdfUrl} download className="button">Download PDF</a>}
             {wordUrl && <a href={wordUrl} download className="button">Download Word</a>}
+            <div className="go-back-link">
+              <a href="/" className="button">Go Back</a>
+            </div>
           </div>
-
+          
           {(!pdfUrl && !wordUrl) && (
             <div className="card resume-error">
               <p>No resume files found. Please upload PDF or Word versions in /public/assets/resumes/.</p>
