@@ -1,6 +1,7 @@
 import React from 'react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver.jsx';
 import '../styles/Hero.css';
+import portfolioData from '../data/portfolioData.json';
 
 const Hero = ({ personalInfo }) => {
     const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
