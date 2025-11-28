@@ -35,7 +35,7 @@ const Header = ({ name, showEditorLink }) => {
       const headerHeight = document.querySelector(".header")?.offsetHeight || 0;
       window.scrollTo({
         top: element.offsetTop - headerHeight,
-        behavior: "smooth"
+        behavior: "auto"
       });
     }
   };
