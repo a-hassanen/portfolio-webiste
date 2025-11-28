@@ -50,7 +50,7 @@
 }
 
 /* Specific button colors */
-.contact-button.email { background-color: #0072c6; }
+.contact-button.email { background-color: #0072c6, font-size: 0.9rem;}
 .contact-button.email:hover{ transform: translateY(-2px);
     text-decoration: none;
     color: #000000 } 
@@ -82,7 +82,7 @@
 
 .contact-button.small {
     flex: 1;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0.4rem 0.6rem;
 }
 /* Hover effect for buttons */
