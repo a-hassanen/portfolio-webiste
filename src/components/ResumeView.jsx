@@ -26,9 +26,8 @@ const ResumeView = () => {
             {pdfUrl && <a href={pdfUrl} download className="button">Download PDF</a>}
             {wordUrl && <a href={wordUrl} download className="button">Download Word</a>}
             <div className="go-back-link">
-              <a
-                onClick={() => window.history.back()} >
-                <FaArrowLeft className="chevron-icon back" />
+            {/*<FaArrowLeft className="chevron-icon back" />*/}
+              <a onClick={() => window.history.back()} className="button">
                 Go Back
               </a>
             </div>
