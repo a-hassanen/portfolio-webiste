@@ -198,18 +198,18 @@
         "expiryDate": ""
       },
       {
-        "name": "ITIL® Foundation Certificate in IT Service Management",
-        "link": "https://drive.google.com/file/d/1GkagP8B5XgYaraa4bq8yYKkn3TvkGzQt/view",
-        "provider": "Axelos",
-        "dateObtained": "November 2020",
-        "expiryDate": ""
-      },
-      {
         "name": "AWS Certified Cloud Practitioner",
         "link": "https://drive.google.com/file/d/1ms29uaGTpax_0r6fzKeBNrk96XbYcgrh/view",
         "provider": "Amazon",
         "dateObtained": "May 2021",
         "expiryDate": "May 2027"
+      },
+      {
+        "name": "ITIL® Foundation Certificate in IT Service Management",
+        "link": "https://drive.google.com/file/d/1GkagP8B5XgYaraa4bq8yYKkn3TvkGzQt/view",
+        "provider": "Axelos",
+        "dateObtained": "November 2020",
+        "expiryDate": ""
       }
     ],
     "Atlassian Technical Expertise": [
@@ -242,221 +242,68 @@
         "expiryDate": ""
       },
       {
-        "name": "Atlassian Certified Jira Administrator for Cloud (ACP-120)",
+        "name": "Jira Administrator for Cloud (ACP-120)",
         "link": "https://drive.google.com/file/d/1uum3Iwel_rCpkYloe20FDrinc-wSJLod/view",
         "provider": "Atlassian",
         "dateObtained": "February 2022",
         "expiryDate": "June 2027"
       },
       {
-        "name": "Atlassian Certified Jira Administrator for Data Center & Server (ACP-100)",
+        "name": "Jira Administrator for Data Center & Server (ACP-100)",
         "link": "https://cp.certmetrics.com/atlassian/en/public/verify/credential/T6XBMRCK2JR11WKH",
         "provider": "Atlassian",
         "dateObtained": "May 2020",
         "expiryDate": "August 2027"
-      },
-      {
-        "name": "Jira Service Management Administrator Certification",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "March 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Advanced Technical Troubleshooting in Jira",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "January 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "ITSM: Customer Service",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "April 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "ITSM: Asset Management",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "April 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Configuring and Troubleshooting Permissions in Jira",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "May 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Customizing Jira Workflows",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "April 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Advanced Filter Usage",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "August 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Service Management: Fundamentals",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "March 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Confluence Cloud Essentials",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "August 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Service Management: Advanced Features",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "March 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Getting Started with Jira Service Management",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "March 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Reporting and Dashboards",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Boards for Scrum and Kanban",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Automation",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Scaling Jira for the Enterprise (Data Center)",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Administration for Cloud",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Confluence Content and Collaboration",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Confluence Team Space Administration",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Managing Service Desks in Jira Service Management",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "March 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Jira Service Management: Implementing Best Practices",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "March 2021",
-        "expiryDate": ""
       }
     ],
     "Cyber Security": [
       {
-        "name": "Security & Compliance: Governance Risk & Compliance (GRC)",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "December 2020",
+        "name": "Security for Professionals and DevOps Professionals",
+        "link": "https://drive.google.com/file/d/1B4glnu6lXH6w-8U0EHU55NsL5SWQOd8-/view",
+        "provider": "IBM",
+        "dateObtained": "November 2025",
+        "expiryDate": ""
+      },
+      {        
+        "name": "Ethical Hacker",
+        "link": "https://drive.google.com/file/d/12e5w-pFBa1icUTf-2kBofgI2LHcxMYR2/view?usp=sharing",
+        "provider": "Cisco",
+        "dateObtained": "October 2025",
+        "expiryDate": ""
+      },
+      {
+        "name": "Cybersecurity for Businesses",
+        "link": "https://learn.eccouncil.org/certificate/05a44f42-8fb7-4bbd-ba90-41dd1af221c5",
+        "provider": "EC-Council",
+        "dateObtained": "November 2025",
+        "expiryDate": ""
+      },
+      {
+        "name": "Cisco LABS Crash Course",
+        "link": "https://learn.eccouncil.org/certificate/9692f93e-a331-4e66-a034-364df6921512",
+        "provider": "EC-Council",
+        "dateObtained": "November 2025",
+        "expiryDate": ""
+      },
+      {
+        "name": "SQL Injection Attacks",
+        "link": "https://learn.eccouncil.org/certificate/a07d7aa1-febb-4740-812b-71594ba8e60a",
+        "provider": "EC-Council",
+        "dateObtained": "November 2025",
+        "expiryDate": ""
+      },
+      {
+        "name": "Phishing Foundations",
+        "link": "https://drive.google.com/file/d/1-vJe-jVFAlQCXx-i2fxWOKhtNhZehHFi/view",
+        "provider": "Tawal",
+        "dateObtained": "November 2025",
         "expiryDate": ""
       },
       {
         "name": "Data Security and Privacy",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        "link": "https://drive.google.com/file/d/1eoGbiK6pUMiU8xw5bzureLdH_7tfi_v8/view",
         "provider": "EverFi",
         "dateObtained": "October 2021",
-        "expiryDate": ""
-      }
-    ],
-    "Web Development & Design": [
-      {
-        "name": "Introduction to HTML, CSS, and JavaScript",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
-        "dateObtained": "January 2020",
-        "expiryDate": ""
-      }
-    ],
-    "Project & Team Management": [
-      {
-        "name": "Strategic Planning Foundations",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "March 2023",
-        "expiryDate": ""
-      },
-      {
-        "name": "Agile Software Development: Kanban",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "March 2023",
-        "expiryDate": ""
-      },
-      {
-        "name": "Change Management",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "February 2023",
-        "expiryDate": ""
-      }
-    ],
-    "Programming & Data": [
-      {
-        "name": "Python Essential Training",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "December 2022",
-        "expiryDate": ""
-      },
-      {
-        "name": "SQL Essential Training",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "December 2022",
         "expiryDate": ""
       }
     ]
@@ -547,44 +394,36 @@
 
     "DevOps, CI/CD & Software Engineering": [
       {
-        "name": "IBM DevOps and Software Engineering Professional Certificate",
-        "imageUrl": "https://media.licdn.com/dms/image/v2/D560BAQGiz5ecgpCtkA/company-logo_100_100/company-logo_100_100/0/1688684715866/ibm_logo?e=1766016000&v=beta&t=QjEEPINeRgFkgvTEWcRm1-o1_CQrVoiCW8EaO5Q1Gf4",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
-        "dateObtained": "November 13, 2025",
-        "skills": ""
-      },
-      {
         "name": "Continuous Integration & Continuous Delivery (CI/CD)",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
-        "dateObtained": "November 13, 2025",
-        "skills": ""
+        "imageUrl": "https://images.credly.com/size/680x680/images/04d68dfe-1cdb-4083-8216-969f078f816a/image.png",
+        "link": "https://www.credly.com/badges/eb3a89dc-d6fc-40bb-9ca0-9d9714100808/public_url",
+        "provider": "IBM",
+        "dateObtained": "November 2025",
+        "skills": "DevOps, CI/CD, Continuous Integration and Continuous Delivery (CI/CD), GitOps Pipeline, OpenShift Pipelines,Tekton"
       },
       {
         "name": "DevOps Capstone",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
-        "dateObtained": "November 13, 2025",
-        "skills": ""
+        "imageUrl": "https://images.credly.com/size/680x680/images/a856d3ba-1aa7-4e93-8c15-8d65cec6368d/image.png",
+        "link": "https://www.credly.com/badges/c1a21e7b-0040-4fbc-8009-552db545dfec/public_url",
+        "provider": "IBM",
+        "dateObtained": "November 2025",
+        "skills": "Agile Methodologies, CI/CD Pipeline Automation, Cross-origin Resource Sharing (CORS) Policies, Docker, Flask-Talisman, GitHub Actions, Kubernetes/OpenShift, Nosetests, REST APIs, Tekton, Test-Driven Development, ZenHub Kanban Board"
       },
       {
         "name": "Git and GitHub Essentials",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
+        "imageUrl": "https://images.credly.com/size/680x680/images/9a0255eb-a47d-4f3a-9611-243bfe3eb9e4/image.png",
+        "link": "https://www.credly.com/badges/5928b8cd-5f95-4524-8302-15c1d93451a6/public_url",
+        "provider": "IBM",
         "dateObtained": "November 13, 2025",
-        "skills": ""
+        "skills": "Collaboration, Git, GitHub, Software Development, Code Repositories, Distributed Version Control, Gitlab, Git Lab Branch Workflow, Merge, Open Source, Pull Request (PR), Social Coding"
       },
       {
         "name": "Linux Commands & Shell Scripting Essentials V2",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
-        "dateObtained": "November 13, 2025",
-        "skills": ""
+        "imageUrl": "https://images.credly.com/size/680x680/images/56774818-e5ff-4dd0-89db-a2a571b0c459/image.png",
+        "link": "https://www.credly.com/badges/32a88a9a-ae19-43b3-950d-93777b784708/public_url",
+        "provider": "IBM",
+        "dateObtained": "November 2025",
+        "skills": "Linux, Bash (Unix Shell), Shell Script"
       },
       {
         "name": "Introduction to Test Driven Development",
@@ -626,11 +465,11 @@
     "Programming & AI Development": [
       {
         "name": "Python Project for AI and Application Development",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Coursera",
-        "dateObtained": "November 13, 2025",
-        "skills": ""
+        "imageUrl": "https://images.credly.com/size/680x680/images/33ed2910-9750-4613-aa2a-590e845c6edb/image.png",
+        "link": "https://www.credly.com/badges/0b802b73-ebb6-41e7-850b-013e02a15fef/public_url",
+        "provider": "IBM",
+        "dateObtained": "November 2025",
+        "skills": "Data Science, Python, Artificial Intelligence"
       }
     ],
 
@@ -662,14 +501,6 @@
     ],
 
     "Cyber Security": [
-      {
-        "name": "Ethical Hacker",
-        "imageUrl": "https://media.licdn.com/dms/image/v2/D560BAQFYnR_Zrm87Dg/company-logo_100_100/B56ZnMyVr4HUAQ-/0/1760077372453/cisco_logo?e=1766016000&v=beta&t=2n8JIU9lF8F5jFbQyBbGOh2DS73X9tYrfr-0zIKjzjU",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Cisco",
-        "dateObtained": "October 31, 2025",
-        "skills": ""
-      }
     ],
 
     "Web Development & Design": [

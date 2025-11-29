@@ -79,7 +79,7 @@ const Header = ({ name, showEditorLink }) => {
             onClick={toggleDarkMode}
             className="nav-button dark-toggle"
           >
-            {isDarkMode ? "🌞" : "🌙"}
+            {isDarkMode ? "🌒" : "🌓"}
           </button>
         </nav>
       </div>
