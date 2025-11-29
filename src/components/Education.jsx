@@ -10,8 +10,10 @@ const Education = ({ items }) => {
       {items.map((item, index) => (
         <div key={index} className="card">
           <h3>{item.degree}</h3>
-          <p><strong>{item.institution}</strong> | {item.period}</p>
+          <p><strong>{item.institution}</strong> | <strong>{item.location}</strong></p>
+          <p>{item.period}</p>
           <p>{item.description}</p>
+          <a href={item.link} className="button" style={{ marginTop: '1rem' }} target="_blank" rel="noopener noreferrer">View Certificate</a>
         </div>
       ))}
     </section>

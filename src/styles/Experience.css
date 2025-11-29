@@ -1,3 +1,4 @@
 .we-description {
-  whiteSpace: pre-line
+  white-space: pre-line;
+  line-height: 1.7;
 }

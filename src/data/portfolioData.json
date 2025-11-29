@@ -78,10 +78,12 @@
   ],
   "education": [
     {
-      "institution": "Limkokwing University of Creative Technology, Selangor, Malaysia",
-      "degree": "Bachelor of Science - BS, Information & Communication Technology",
-      "period": "Oct 2015 - Jul 2018",
-      "description": "Graduated with honors."
+      "institution": "Limkokwing University of Creative Technology",
+      "location": "Selangor, Malaysia",
+      "degree": "Bachelor's degree of Science - BS, Information & Communication Technology",
+      "period": "",
+      "description": "Graduated with honors.",
+      "link": "https://www.credly.com/badges/82abe337-c40f-4c38-938c-7d5e967a7432"
     }
   ],
   "skills": {
@@ -190,60 +192,39 @@
       },
       {
         "name": "ITIL® 4 Specialist Create, Deliver and Support",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        "link": "https://drive.google.com/file/d/1FYvE3qnnHTqjVxq8JpV4byIhstIQgQ6E/view",
         "provider": "Axelos",
         "dateObtained": "September 2022",
         "expiryDate": ""
       },
       {
         "name": "ITIL® Foundation Certificate in IT Service Management",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        "link": "https://drive.google.com/file/d/1GkagP8B5XgYaraa4bq8yYKkn3TvkGzQt/view",
         "provider": "Axelos",
         "dateObtained": "November 2020",
         "expiryDate": ""
       },
       {
         "name": "AWS Certified Cloud Practitioner",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        "link": "https://drive.google.com/file/d/1ms29uaGTpax_0r6fzKeBNrk96XbYcgrh/view",
         "provider": "Amazon",
         "dateObtained": "May 2021",
-        "expiryDate": ""
-      },
-      {
-        "name": "Essential Git and Branching",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "October 2020",
-        "expiryDate": ""
-      },
-      {
-        "name": "Introduction to Terraform for AWS",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "June 2023",
-        "expiryDate": ""
-      },
-      {
-        "name": "Learning Kubernetes",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "LinkedIn",
-        "dateObtained": "May 2023",
-        "expiryDate": ""
+        "expiryDate": "May 2027"
       }
     ],
     "Atlassian Technical Expertise": [
+      {
+        "name": "Atlassian Certified Expert (ACE)",
+        "link": "https://cp.certmetrics.com/atlassian/en/public/badge/r?id=88815&date=2023-01-14",
+        "provider": "Atlassian",
+        "dateObtained": "January 2023",
+        "expiryDate": ""
+      },
       {
         "name": "Atlassian Cloud Organization Admin",
         "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
         "provider": "Atlassian",
         "dateObtained": "September 2023",
-        "expiryDate": ""
-      },
-      {
-        "name": "Atlassian Certified Expert (ACE)",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-        "provider": "Atlassian",
-        "dateObtained": "January 2023",
         "expiryDate": ""
       },
       {
@@ -484,7 +465,7 @@
     "Cloud, DevOps, & IT Service Management": [
       {
         "name": "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=GCCF+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://www.skills.google/profile/badges",
         "provider": "Google",
         "dateObtained": "November 2025",
@@ -492,7 +473,7 @@
       },
       {
         "name": "Google Cloud Computing Foundations: Cloud Infrastructure",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=GCCI+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://www.skills.google/profile/badges",
         "provider": "Google",
         "dateObtained": "November 2025",
@@ -500,7 +481,7 @@
       },
       {
         "name": "Google Cloud Computing Foundations: Networking and Security in Google Cloud",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=GCCN/S+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://www.skills.google/profile/badges",
         "provider": "Google",
         "dateObtained": "November 2025",
@@ -508,7 +489,7 @@
       },
       {
         "name": "Google Cloud Computing Foundations: Storage and Databases in Google Cloud",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=GCCS/D+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://www.skills.google/profile/badges",
         "provider": "Google",
         "dateObtained": "November 2025",
@@ -516,7 +497,7 @@
       },
       {
         "name": "Google IT Support: Operating Systems and You",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=OS+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://www.skills.google/profile/badges",
         "provider": "Google",
         "dateObtained": "November 2025",
@@ -524,7 +505,7 @@
       },
       {
         "name": "Google IT Support Certificate",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
         "provider": "Google Career Certificates",
         "dateObtained": "October 31, 2025",
@@ -532,7 +513,7 @@
       },
       {
         "name": "Google IT Support: Technical Support Fundamentals",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=TSF+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1766016000&v=beta&t=fR_FqAATCDGeBCo8yxoQR6JtKXDz3Ws5h7gwSacBtGE",
         "link": "https://www.skills.google/profile/badges",
         "provider": "Google",
         "dateObtained": "November 2025",
@@ -567,7 +548,7 @@
     "DevOps, CI/CD & Software Engineering": [
       {
         "name": "IBM DevOps and Software Engineering Professional Certificate",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D560BAQGiz5ecgpCtkA/company-logo_100_100/company-logo_100_100/0/1688684715866/ibm_logo?e=1766016000&v=beta&t=QjEEPINeRgFkgvTEWcRm1-o1_CQrVoiCW8EaO5Q1Gf4",
         "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
         "provider": "Coursera",
         "dateObtained": "November 13, 2025",
@@ -683,7 +664,7 @@
     "Cyber Security": [
       {
         "name": "Ethical Hacker",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
+        "imageUrl": "https://media.licdn.com/dms/image/v2/D560BAQFYnR_Zrm87Dg/company-logo_100_100/B56ZnMyVr4HUAQ-/0/1760077372453/cisco_logo?e=1766016000&v=beta&t=2n8JIU9lF8F5jFbQyBbGOh2DS73X9tYrfr-0zIKjzjU",
         "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
         "provider": "Cisco",
         "dateObtained": "October 31, 2025",
@@ -712,11 +693,11 @@
     "Recognition & Awards": [
       {
         "name": "Best Hack Winner 1st place",
-        "imageUrl": "https://placehold.co/150x150/000/fff?text=HTML/CSS/JS+Badge",
-        "link": "https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        "imageUrl": "https://media.licdn.com/dms/image/sync/v2/D5627AQGpPv05h95E8g/articleshare-shrink_480/B56ZpJiH9FJkAw-/0/1762170274638?e=1765008000&v=beta&t=tBJYgLsYNijBSLNVRphc0Fsp3QaDNQ9-JO3nmHSp4Zk",
+        "link": "https://drive.google.com/file/d/1gk3SClD0epjExLAz0Lyr43NyJ4okl7ho/view?pli=1g",
         "provider": "ServiceRocket",
         "dateObtained": "August 2022",
-        "skills": "Teamwork, Problem Solving, Leadership"
+        "skills": "Teamwork, Problem Solving, Leadership, Software Development"
       }
     ]
   }
